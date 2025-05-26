@@ -14,7 +14,15 @@
 
 </div>
 
+---
 
+**RELAXED INSTALL REQUIREMENTS**
+
+```
+pip install git+https://github.com/samblouir/based
+```
+
+---
 Based is an efficient architecture inspired by recovering attention-like capabilities (i.e., *recall*). We do so by combining 2 simple ideas:
 1. Short sliding window attention (e.g., window size 64), to model fine-grained local dependencies
 2. "Dense" and global *linear* attention, to model long-range dependencies
