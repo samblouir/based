@@ -1,7 +1,5 @@
 from setuptools import setup, find_packages
 
-
-
 # ensure that torch is installed, and send to torch website if not
 try:
     import torch
@@ -10,47 +8,46 @@ except ModuleNotFoundError:
 
 _REQUIRED = [
     "packaging",
-    "protobuf<4.24",
-    "fsspec==2023.10.0",
-    "datasets==2.15.0",
-    "aiohttp", # https://github.com/aio-libs/aiohttp/issues/6794
-    "dill==0.3.6",
-    "multiprocess==0.70.14",
-    "huggingface-hub==0.19.4",
-    "transformers==4.36.2",
-    "einops==0.7.0",
-    "ftfy==6.1.3",
-    "opt-einsum==3.3.0",
-    "pydantic==2.5.3",
-    "pydantic-core==2.14.6",
-    "pykeops==2.2",
-    "python-dotenv==1.0.0",
-    "sentencepiece==0.1.99",
-    "tokenizers==0.15.0",
-    "six==1.16.0",
-    "scikit-learn==1.3.2",
-    "lm-eval==0.4.1",
-    "ninja==1.11.1.1",
-    "flash-attn==2.5.2",
+    "protobuf",
+    "fsspec",
+    "datasets",
+    "aiohttp",  # https://github.com/aio-libs/aiohttp/issues/6794
+    "dill",
+    "multiprocess",
+    "huggingface-hub",
+    "transformers",
+    "einops",
+    "ftfy",
+    "opt-einsum",
+    "pydantic",
+    "pydantic-core",
+    "pykeops",
+    "python-dotenv",
+    "sentencepiece",
+    "tokenizers",
+    "six",
+    "scikit-learn",
+    "lm-eval",
+    "ninja",
+    "flash-attn",
     "causal-conv1d",
 ]
 
 _OPTIONAL = {
     "train": [
         "rich",
-        "hydra-core==1.3.2",
+        "hydra-core",
         "hydra_colorlog",
-        "wandb==0.16.2",
-        "lightning-bolts==0.7.0",
-        "lightning-utilities==0.10.0",
-        "pytorch-lightning==1.8.6",
-        "timm"
+        "wandb",
+        "lightning-bolts",
+        "lightning-utilities",
+        "pytorch-lightning",
+        "timm",
     ],
     "dev": [
-        "pytest"
-    ]
+        "pytest",
+    ],
 }
-
 
 setup(
     name='based',
